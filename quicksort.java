@@ -17,9 +17,9 @@ class quicksort
 
         while (i <= j) 
         {
-            while (i <= h && a[i] <= pivot)
+            while (a[i] <= pivot)
                 i++;
-            while (j >= l && a[j] > pivot)
+            while (a[j] > pivot)
                 j--;
             if (i < j)
                 swap(a, i, j);
